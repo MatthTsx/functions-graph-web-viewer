@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import { MainComponent } from "~/components";
 
 export default function Home() {
   return (
@@ -7,9 +7,10 @@ export default function Home() {
       <Head>
         <title>idk</title>
       </Head>
-      <body className="bg-neutral-950 w-screen h-screen">
-        <div className="w-screen h-screen absolute bg-purple-900/10 pointer-events-none"/>
-      </body>
+      <main className="w-screen h-screen flex justify-center items-center bg-neutral-900">
+          <div className="blur-3xl w-screen h-screen absolute bg-blue-900/15"/>
+          <MainComponent/>
+      </main>
     </>
   );
 }
